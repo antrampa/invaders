@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3fcf5b0b-15b2-43c3-b63c-97ea50960de4}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>pygame-invaders.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="alien1.png" />
+    <Content Include="alien2.png" />
+    <Content Include="alien3.png" />
+    <Content Include="alien4.png" />
+    <Content Include="alien5.png" />
+    <Content Include="F-16-100-x.png" />
+    <Content Include="F-16-100.png" />
+    <Content Include="F-16-el-80.png" />
+    <Content Include="imgs\57943d6d2eedf08c52bb8ed6b6b556c1.jpg" />
+    <Content Include="imgs\F-10-el.png" />
+    <Content Include="imgs\F-16-el-80.png" />
+    <Content Include="imgs\f-16.jpg" />
+    <Content Include="imgs\hellenic.jpg" />
+    <Content Include="imgs\IMG_20160521_223138.jpg" />
+    <Content Include="imgs\IMG_20160521_223146.jpg" />
+    <Content Include="imgs\IMG_20160521_223408.jpg" />
+    <Content Include="imgs\originals\57943d6d2eedf08c52bb8ed6b6b556c1.jpg" />
+    <Content Include="imgs\originals\F-10-1000.png" />
+    <Content Include="imgs\originals\F-16-100-x.png" />
+    <Content Include="imgs\originals\F-16-100.png" />
+    <Content Include="imgs\originals\F-16-Big.png" />
+    <Content Include="imgs\originals\f-16.jpg" />
+    <Content Include="imgs\originals\F-16.png" />
+    <Content Include="imgs\originals\hellenic.jpg" />
+    <Content Include="imgs\originals\IMG_20160521_223138.jpg" />
+    <Content Include="imgs\originals\IMG_20160521_223146.jpg" />
+    <Content Include="imgs\originals\IMG_20160521_223408.jpg" />
+    <Content Include="spaceship.png" />
+    <Content Include="spaceship2.png" />
+    <Content Include="spaceship3.png" />
+    <Content Include="stars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="pygame-invaders.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imgs" />
+    <Folder Include="imgs\originals" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
